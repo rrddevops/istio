@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: servicex
-        image: wesleywillians/circuit-breaker-example-go:error-504
+        image: rodrigordavila/go-circuit-brake:latest
         ports:
         - containerPort: 8000
         env:
