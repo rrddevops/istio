@@ -11,7 +11,7 @@ spec:
         name: http
         protocol: http2
       hosts:
-      - "*.fullcycle"
+      - "*.rodriogrdavila"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -19,7 +19,7 @@ metadata:
   name: nginx-vs
 spec:
   hosts: 
-  - "a.fullcycle"
+  - "a.rodriogrdavila"
   gateways:
     - "ingress-gateway-k3s"
   http:
@@ -34,7 +34,7 @@ metadata:
   name: nginx-vs-b
 spec:
   hosts: 
-  - "b.fullcycle"
+  - "b.rodrigordavila"
   gateways:
     - "ingress-gateway-k3s"
   http:
